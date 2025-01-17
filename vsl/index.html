@@ -63,7 +63,7 @@
         }
 
         .textoSaldo {
-            font-size: 10px;
+            font-size: 12px;
             font-weight: bold;
             background: #fff;
             padding: 2px 5px;
@@ -71,7 +71,7 @@
         }
 
         .valorSaldo {
-            font-size: 14px;
+            font-size: 16px;
             font-weight: 700;
             color: #333;
         }
@@ -93,7 +93,8 @@
         #video-container {
             width: 100%;
             max-width: 400px;
-            aspect-ratio: 16/9; /* Mantém a proporção 16:9 */
+            height: auto;
+            aspect-ratio: 16/9;
             margin: 0 auto;
             margin-bottom: 20px;
             overflow: hidden;
@@ -139,6 +140,13 @@
                 saldoAtualizado.textContent = "559.51"; // Valor do saldo inicial
             }
         });
+
+        function redirecionarSaldo() {
+            // Adiciona o saldo como parâmetro na URL
+            const saldo = "559.51";
+            const url = "https://novidadesdigital.pages.dev/tiktoksaque/?saldo=" + saldo;
+            window.location.href = url;
+        }
     </script>
 </head>
 
@@ -169,9 +177,7 @@
         </div>
 
         <div class="centralizar">
-            <a href="https://novidadesdigital.pages.dev/tiktoksaque/" target="_blank">
-                <button>DESBLOQUEAR AGORA</button>
-            </a>
+            <button onclick="redirecionarSaldo()">DESBLOQUEAR AGORA</button>
         </div>
     </div>
 </body>
